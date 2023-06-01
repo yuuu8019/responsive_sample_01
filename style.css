@@ -1,0 +1,116 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  #wrap {
+    width: 84%;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  header {
+  ...
+  }
+  
+
+header {
+  background: #ffb876;
+  color: #FFF;
+  padding: 20px;
+}
+.main-menu {
+  background: #7a6b59;
+}
+.main-menu ul {
+    display: flex;
+  }
+  .main-menu ul li a {
+    color: #FFF;
+    display: block;
+    padding: 10px 20px;
+  }
+  .main-menu ul li a:hover {
+    background: #2c2825;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+section {
+  background: #EEE;
+  flex: 3;
+  padding: 20px;
+}
+article {
+  background: #FFF;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+aside {
+  background: #DDD;
+  flex: 1;
+}
+.sub-menu {
+  background: #abcb9e;
+}
+.sub-menu ul li a {
+    color: #FFF;
+    display: block;
+    padding: 10px 20px;
+  }
+  .sub-menu ul li a:hover {
+    background: #5e7c65;
+  }
+footer {
+  background: #ffb876;
+  color: #FFF;
+  padding: 20px;
+  text-align: center;
+}
+
+main p {
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+  }
+  
+  article img {
+    max-width: 600px;
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+    box-sizing: border-box;
+  }
+
+  /*タブレット用*/
+@media all and (max-width: 1024px) {
+  #wrap {
+    width: 100%;
+  }
+}
+
+/*スマホ用*/
+@media all and (max-width: 599px) {
+  .main-menu ul {
+    display: block;
+  }
+
+  .main-menu ul li {
+    text-align: center;
+  }
+
+  main {
+    display: block;
+    flex-direction: unset;
+  }
+
+  .sub-menu ul li {
+    text-align: center;
+  }
+}
